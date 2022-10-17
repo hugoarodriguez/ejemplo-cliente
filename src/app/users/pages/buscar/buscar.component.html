@@ -1,0 +1,49 @@
+<p>buscar works! en la pagina del componente buscar</p>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-2">
+            Nombre
+        </div>
+        <div class="col-2">
+            Correo
+        </div>
+        <div class="col-2">
+            Estado
+        </div>
+        <div class="col-2">
+            Rol
+        </div>
+        <div class="col-2">
+            Imagen
+        </div>
+        <div class="col-2">
+            Google
+        </div>
+        <div class="dropdown-divider"></div>
+    </div>
+    <div *ngFor="let item of users">
+        <div class="row">
+            <div class="col-2 text-break">
+                {{item.nombre}}
+            </div>
+            <div class="col-2 text-break">
+                {{item.correo}}
+            </div>
+            <div class="col-2 text-break">
+                {{item.estado}}
+            </div>
+            <div class="col-2 text-break">
+                {{item.rol}}
+            </div>
+            <div class="col-2 text-break">
+                {{item.img}}
+            </div>
+            <div class="col-2 text-break">
+                {{item.google}}
+            </div>
+        </div>
+        <div class="dropdown-divider"></div>
+    </div>
+</div>
